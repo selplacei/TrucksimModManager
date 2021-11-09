@@ -161,6 +161,7 @@ The load order is specified in the `mods.order` list, with entries to the left b
 - A mod name - only allowed for mods that are either Equivalents or have a single .scs file (which could be extracted from an archive)
 - A mod name followed by a slash and a filename - unlike the `[mods.filenames]` table, this specifies names of .scs files, whether they were downloaded separately or extracted from an archive
 - An optional mod/feature specified as a list where the first element is a human-readable description of a feature, the second element is one of the above two things to be enabled if the feature is desired, and an optional third element to be enabled otherwise (note that entries with the same first element will be grouped together in the UI's list of features to enable)
+  * The difference between Equivalents and optional mods is that an Equivalent can have more than 2 options to choose from and one must be present (while an optional mod may be empty). They're also treated differently from a UX perspective.
 
 Example:
 
